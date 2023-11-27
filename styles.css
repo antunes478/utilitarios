@@ -1,0 +1,93 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 128, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 15px;
+}
+
+.info {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-100%);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ajuste o estilo do texto conforme necessário */
+.info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.info p {
+  font-size: 14px;
+  color: white;
+}
+
+/* Adicione uma classe 'active' para controlar a exibição das informações */
+.overlay.active,
+.info.active {
+    opacity: 1;
+    transform: translateY(0);
+}
