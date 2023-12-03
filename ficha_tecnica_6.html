@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem do Computador</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-color: #611515;
+            text-align: center;
+            font-size: 16px; /* Tamanho base da fonte */
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 5em; /* Tamanho maior para o cabeçalho */
+        }
+
+        p {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 2em; /* Tamanho menor para os parágrafos */
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%; /* Reduzi o tamanho das imagens para 80% */
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .imagem-montagem {
+            width: 100%; /* Define a largura de todas as imagens para 100% */
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Define um índice z negativo para colocar o vídeo atrás do conteúdo */
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background-video">
+        <video autoplay muted loop>
+            <source src="circuit_-_27725 (1080p).mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    <div>
+        <h1>MOntagem do Computador.</h1>
+
+        <p>
+            <strong>1º PAsso:</strong> Colocar o processador no sítio com muito cuidado para não entortar os pinos e ter em atenção o lado para que o mesmo esteja virado.
+        </p>
+        <img class="imagem-montagem" src="processador.png" alt="Imagem do 1º Passo"><br>
+
+        <p>
+            <strong>2º Passo:</strong> Inserimos a memória ligando os pins no sítio certo depois de desaparafusar o parafuso que está a seguir aos pins e quando colocada a memória volta-se a pô-lo.
+        </p>
+        <img class="imagem-montagem" src="SSD.png" alt="Imagem do 2º Passo"><br>
+
+        <p>
+            <strong>3º Passo:</strong> Colocamos a placa gráfica no sítio com cuidado para não partir os pins e virada para o lado certo. É preciso ter cuidado com os pins, pois há um espaço específico para colocá-los.
+        </p>
+        <img class="imagem-montagem" src="placa glafica.png" alt="Imagem do 3º Passo"><br>
+        <img class="imagem-montagem" src="continuacao da placa graficava.png" alt="Imagem do 3º Passo"><br>
+
+        <p>
+            <strong>4º Passo:</strong> Colocamos as memórias nos slots A1 e B1 para trabalharem em dual channel, melhorando o desempenho das mesmas.
+        </p>
+        <img class="imagem-montagem" src="memoria ram.png" alt="Imagem do 4º Passo"><br>
+
+        <p>
+            <strong>5º Passo:</strong> Logo de seguida colocamos a motherboard com o hardware já colocado dentro da caixa e aparafusamos.
+        </p>
+        <img class="imagem-montagem" src="por tudo dentro da caixa.png" alt="Imagem do 5º Passo"><br>
+
+        <p>
+            <strong>6º Passo:</strong> De seguida, pomos a fonte na caixa e ligamos os cabos à mesma.
+        </p>
+        <img class="imagem-montagem" src="fonte de alimentacao.png" alt="Imagem do 6º Passo"><br>
+
+        <p>
+            <strong>7º Passo:</strong> No final de ligarmos os cabos corretamente e de pormos os componentes no sítio, começamos a colocar o cooler.
+        </p>
+
+        <p>
+            <strong>1º passo:</strong> Colocamos por cima do processador um pouco de pasta térmica.
+        </p>
+        <img class="imagem-montagem" src="as ligacoes.png" alt="Imagem do 1º Passo do Cooler"><br>
+
+        <p>
+            <strong>2º Passo:</strong> Colocamos o cooler em cima depois de espalhar um pouco a pasta para preencher a parte de cima do processador todo.
+        </p>
+        <img class="imagem-montagem" src="ligacoes.png" alt="Imagem do 2º Passo do Cooler"><br>
+    </div>
+</body>
+
+</html>
